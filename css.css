@@ -1552,6 +1552,8 @@ img {
 
 .filter-submenu {
     position: absolute;
+    left: 0;
+    top: 100%;
     width: 100%;
     height: auto;
     background-color: white;
@@ -1559,6 +1561,10 @@ img {
     z-index: 10;
     opacity: 0;
     pointer-events: none;
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
     transform: translateY(-10%);
     transition: 
         opacity 0.3s ease,

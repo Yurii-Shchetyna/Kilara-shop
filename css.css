@@ -1553,12 +1553,12 @@ img {
 .filter-submenu {
     position: absolute;
     left: 0;
-    top: 100%;
     width: 100%;
     height: auto;
     background-color: white;
     border: 1px solid #d9d9d9;
     z-index: 10;
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
     display: block;
@@ -1574,6 +1574,7 @@ img {
 .filter-submenu.show {
     pointer-events: auto;
     opacity:1;
+    visibility: visible;
     transform: translateY(0%);
 }
 
@@ -1614,6 +1615,7 @@ img {
     display: flex;
     max-height: 0;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateY(-20%);
     transition: opacity 0.2s ease,
@@ -1625,6 +1627,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     max-height: 0;
     transform: translateY(-20%);
@@ -1649,6 +1652,7 @@ img {
     display: flex;
     flex-direction: column;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     max-height: 0;
     transform: translateY(-20%);
@@ -1661,6 +1665,7 @@ img {
     display: flex;
     flex-direction: column;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     max-height: 0;
     transform: translateY(-20%);
@@ -1716,6 +1721,7 @@ img {
     gap: 10px;
     padding: 15px;
     opacity: 1;
+    visibility: visible;
     transform: translateY(0%);
 }
 

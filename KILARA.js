@@ -883,10 +883,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = btn.querySelector('img');
         if(!img) return;
         btn.addEventListener('click', () => {
-            if (img.src.includes("/images/likes.png")) {
-            img.src = "/images/like-active.png";
+            if (img.src.includes("images/likes.png")) {
+            img.src = "images/like-active.png";
             } else {
-                img.src = "/images/likes.png";
+                img.src = "images/likes.png";
             }
         });
     })
@@ -894,10 +894,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = btn.querySelector('img');
         if(!img) return;
         btn.addEventListener('click', () => {
-            if (img.src.includes("/images/likes.small.png")) {
-            img.src = "/images/like-active.small.png";
+            if (img.src.includes("images/likes.small.png")) {
+            img.src = "images/like-active.small.png";
             } else {
-                img.src = "/images/likes.small.png";
+                img.src = "images/likes.small.png";
             }
         });
     })
@@ -906,10 +906,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = btn.querySelector('img');
         if(!img) return;
         btn.addEventListener('click', () => {
-            if(img.src.includes("/images/cart.png")) {
-                img.src = "/images/cart-active.png";
+            if(img.src.includes("images/cart.png")) {
+                img.src = "images/cart-active.png";
             } else {
-                img.src = "/images/cart.png";
+                img.src = "images/cart.png";
             }
         });
     });
@@ -918,10 +918,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = btn.querySelector('img');
         if(!img) return;
         btn.addEventListener('click', () => {
-            if(img.src.includes("/images/cart.small.png")) {
-                img.src = "/images/cart-active.small.png";
+            if(img.src.includes("images/cart.small.png")) {
+                img.src = "images/cart-active.small.png";
             } else {
-                img.src = "/images/cart.small.png";
+                img.src = "images/cart.small.png";
             }
         });
     });

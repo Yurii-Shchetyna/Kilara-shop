@@ -85,7 +85,7 @@
                                                                     <li class="menu-block"><a href="#">Худі та світшоти</a></li>
                                                                     <li class="menu-block"><a href="#">Спідниці та шорти</a></li>
                                                                     <li class="menu-block"><a href="./dityam_comlects.html">Комплекти</a></li>
-                                                                    <li class="menu-block"><a href="№">Спортивний одяг</a></li>
+                                                                    <li class="menu-block"><a href="#">Спортивний одяг</a></li>
                                                                     <li class="menu-block"><a href="#">Джинси та брюки</a></li>
                                                                     <li class="menu-block"><a href="#">Верхній одяг</a></li>
                                                                     <li class="menu-block"><a href="#">Пляжний одяг</a></li>
@@ -135,56 +135,33 @@
                     <a href="./index.html" class="normal logo nav-link"><img src="images/KILARA.png" alt="logo"></a>
                     <a href="./index.html" class="smartphone logo nav-link"><img src="images/KILARA.small.png" alt="logo.small"></a>
                     <div class="icons">
-                        <a href="tel:012 345 6789" class="phone"><img src="images/phone.png" alt="phone"></a>
+                        <a href="tel:012 345 6789" class="phone"><img src="images/phone.png" width="25px" height="25px" alt="phone"></a>
                         <a href="tel:012 345 6789" class="normal number">012 345 6789</a>
-                        <a href="#" id="open-cart" class="normal cart"><img src="images/cart.png" alt="cart"></a>
+                        <a href="#" id="open-cart" class="cart"><img src="images/cart.png" width="25px" height="25px" alt="cart"></a>
                             <div id="cart-container" class="cart-container">
                                 <div class="cart-content" id="cart-content">
-                                    <a href="#" id="close-cart" class="closebtn"><img src="images/close-btn.png" alt="close"></a>
+                                    <button id="close-cart" class="closebtn"><img src="images/close-btn.png" alt="close"></button>
                                     <h3>Мій кошик</h3>
                                     <div class="export"></div>
                                     <a href="./order.html" class="order nav-link">Оформити замовлення</a>
                                 </div>
                             </div>
-                        <a href="#" id="open-cart-sp" class="smartphone cart"><img src="images/cart.small.png" alt="cart.small"></a>
-                            <div id="cart-container-sp" class="cart-container-sp">
-                                <div class="cart-content-sp">
-                                    <a href="#" id="close-cart-sp" class="closebtn-sp"><img src="images/close-btn.png" alt="close"></a>
-                                    <h4>Мій кошик</h4>
-                                    <div class="export"></div>
-                                    <a href="./order.html" class="order-sp nav-link">Оформити замовлення</a>
-                                </div>
-                            </div>
-                        <a href="#" id="open-user" class="normal user"><img src="images/user.png" alt="user"></a>
+                        <a href="#" id="open-user" class="user"><img src="images/user.png" width="25px" height="25px" alt="user"></a>
                             <div id="user-container" class="user-container">
                                 <div class="user-content">
-                                    <h3>Авторизація</h3>
-                                    <input type="text" class="login" placeholder="E-mail">
-                                    <input type="text" class="login" placeholder="Пароль">
-                                    <label class="rem"><input type="checkbox" class="cb-input"><span class="cb-label">Запама'ятати мене</span></label>
-                                    <a href="#" class="go">Увійти</a>
+                                    <button id="close-user" class="closebtn"><img src="images/close-btn.png" alt="close"></button>
+                                    <form action="login.php" method="post">
+                                        <h3>Авторизація</h3>
+                                        <article>
+                                            <input type="text" name="email" class="login" placeholder="E-mail" required>
+                                            <input type="password" name="password" class="login" placeholder="Пароль" required>
+                                        </article>
+                                        <label><input type="checkbox" name="remember" class="cb-input"> Запама'ятати мене</label>
+                                        <button type="submit" class="go">Увійти</button>
+                                    </form>
                                 </div>
                             </div>
-                        <a href="#" class="smartphone user" id="open-user-sp"><img src="images/user.small.png" alt="user.small"></a>
-                            <div id="user-container-sp" class="user-container-sp">
-                                <div class="user-content-sp">
-                                    <div class="user-upper">
-                                        <a href="#" id="close-user-sp" class="closebtn-sp"><img src="images/close-btn.png" alt="close"></a>
-                                        <h4>Авторизація</h4>
-                                    </div>
-                                    <div class="user-login">
-                                        <input type="text" class="login-sp" placeholder="E-mail">
-                                        <input type="text" class="login-sp" placeholder="Пароль">
-                                        <label class="rem"><input type="checkbox" class="cb-input"><span class="cb-label">Запама'ятати мене</span></label>
-                                    </div>
-                                     <div class="user-enter">
-                                        <a href="#" class="go">Увійти</a>
-                                     </div>   
-                                    
-                                </div>
-                            </div>
-                        <a href="#" class="normal likes"><img src="images/likes.png" alt="likes"></a>
-                        <a href="#" class="smartphone likes"><img src="images/likes.small.png" alt="likes.small"></a>
+                        <a href="#" class="likes"><img src="images/likes.png" width="25px" height="25px" alt="likes"></a>
                     </div>
                 </div>
             </div>
@@ -248,7 +225,7 @@
                                         <li class="second"><a href="#">Худі та світшоти</a></li>
                                         <li class="second"><a href="#">Шорти</a></li>
                                         <li class="second"><a href="./dityam_comlects.html">Комплекти</a></li>
-                                        <li class="second"><a href="№">Спортивний одяг</a></li>
+                                        <li class="second"><a href="#">Спортивний одяг</a></li>
                                         <li class="second"><a href="#">Джинси та брюки</a></li>
                                         <li class="second"><a href="#">Верхній одяг</a></li>
                                         <li class="second"><a href="#">Пляжний одяг</a></li>
@@ -417,8 +394,7 @@
             <div class="catalogue2_ct">
                 <div class="block">
                     <div class="img"><a href="./item_page.html"><img src="images/example-1.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
                     <div class="color">
                         <a href="">
@@ -459,13 +435,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="./item_page.html"><img src="images/example-2.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
                     <div class="color">
                         <a href="">
@@ -506,8 +480,7 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="./item_page.html"><img src="images/example-3.png" alt=""></a></div>
@@ -553,13 +526,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                     <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
                 </div>
                 <div class="block">
-                    <div class="img"><a href="./item_page.html"><img src="images/example-4.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <div class="img"><a href="./item_page.html"><img src="images/example-4.png" width="25px" alt=""></a></div>
                     <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
                     <div class="color">
                         <a href="">
@@ -600,13 +571,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-1.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
                     <div class="color">
                         <a href="">
@@ -647,13 +616,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-2.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
                     <div class="color">
                         <a href="">
@@ -694,13 +661,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-3.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
                     <div class="color">
                         <a href="">
@@ -741,13 +706,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-4.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
                     <div class="color">
                         <a href="">
@@ -788,13 +751,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-1.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
                     <div class="color">
                         <a href="">
@@ -835,13 +796,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-2.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
                     <div class="color">
                         <a href="">
@@ -882,13 +841,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-3.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
                     <div class="color">
                         <a href="">
@@ -929,13 +886,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-4.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px"alt=""></div></button>
                     <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
                     <div class="color">
                         <a href="">
@@ -976,13 +931,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-1.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
                     <div class="color">
                         <a href="">
@@ -1023,13 +976,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-2.png" alt=""></a></div>
                     <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
                     <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
                     <div class="color">
                         <a href="">
@@ -1070,13 +1021,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-3.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
                     <div class="color">
                         <a href="">
@@ -1117,13 +1066,11 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
                     <div class="img"><a href="#"><img src="images/example-4.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" class="like-icon" alt=""></div></button>
-                    <button class="like-this-sp" type="button"><div class="likeThis"><img src="images/likes.small.png" class="like-icon-sp" alt=""></div></button>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
                     <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
                     <div class="color">
                         <a href="">
@@ -1164,8 +1111,7 @@
                         </a>
                     </div>
                     <div class="price"><p>280 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" class="cart-icon" alt=""></div></button>
-                    <button class="btn-buy-sp" type="button"><div class="buyBtn"><img src="images/cart.small.png" class="cart-icon-sp" alt=""></div></button>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
             </div>   
             <div class="pagination">

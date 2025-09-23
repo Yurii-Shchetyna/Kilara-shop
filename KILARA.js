@@ -117,32 +117,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const open_cart_sp = document.getElementById('open-cart-sp');
-    const cart_container_sp = document.getElementById('cart-container-sp');
-    const close_cart_sp = document.getElementById('close-cart-sp');
-
-    open_cart_sp.addEventListener("click", (e) => {
-    e.preventDefault();
-    cart_container_sp.classList.add('show');
-    });
-
-    close_cart_sp.addEventListener("click", (e) => {
-    e.preventDefault();
-    cart_container_sp.classList.remove('show');
-    });
-
     const open_user = document.getElementById('open-user');
     const user_container = document.getElementById('user-container');
+    const close_user = document.getElementById('close-user');
 
     open_user.addEventListener("click", (e) => {
-    e.preventDefault();
-    user_container.classList.add('show');
+        e.preventDefault();
+        user_container.classList.add('show');
     });
 
+    close_user?.addEventListener('click', () => {
+        user_container.classList.remove('show');
+    })
+
     user_container.addEventListener("click", (e) => {
-    if (e.target === user_container) {
-    user_container.classList.remove('show');
-    }
+        if (e.target === user_container) {
+        user_container.classList.remove('show');
+        }
     });
 
     document.addEventListener('keydown', (e) => {
@@ -150,20 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
             user_container.classList.remove('show');
         }
     })
-
-    const open_user_sp = document.getElementById('open-user-sp');
-    const user_container_sp = document.getElementById('user-container-sp');
-    const close_user_sp = document.getElementById('close-user-sp');
-
-    open_user_sp.addEventListener("click", (e) => {
-    e.preventDefault();
-    user_container_sp.classList.add('show');
-    });
-
-    close_user_sp.addEventListener("click", (e) => {
-    e.preventDefault();
-    user_container_sp.classList.remove('show');
-    }); 
 });
 
 // size and characteristics
@@ -409,10 +386,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     sex.forEach(item => {
-        item.addEventListener("click", () => {
-            sex.forEach(a => a.classList.remove("selected"));
-            item.classList.add("selected");
-        })
+        item.addEventListener('click', () => {
+            if (item.classList.contains('selected')) {
+                item.classList.remove('selected');
+            } else {
+                item.classList.add('selected');
+            }
+        });
     })
 
     document.querySelectorAll('#sort-submenu .sort-option').forEach(opt => {
@@ -539,10 +519,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     sex_sp.forEach(item => {
-        item.addEventListener("click", () => {
-            sex_sp.forEach(a => a.classList.remove("selected"));
-            item.classList.add("selected");
-        })
+        item.addEventListener('click', () => {
+            if (item.classList.contains('selected')) {
+                item.classList.remove('selected');
+            } else {
+            item.classList.add('selected');
+            }
+        });
     });
 
     season_sp.forEach(item => {
@@ -894,10 +877,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = btn.querySelector('img');
         if(!img) return;
         btn.addEventListener('click', () => {
-            if (img.src.includes("images/likes.small.png")) {
-            img.src = "images/like-active.small.png";
+            if (img.src.includes("images/likes.png")) {
+            img.src = "images/like-active.png";
             } else {
-                img.src = "images/likes.small.png";
+                img.src = "images/likes.png";
             }
         });
     })
@@ -925,6 +908,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    document.querySelectorAll('.add-to-likes').forEach(btn => {
+        const img = btn.querySelector('img');
+        if(!img) return;
+        btn.addEventListener('click', () => {
+            if(img.src.includes("images/likes.png")) {
+                img.src = "images/like-active.small.png";
+            } else {
+                img.src = "images/likes.png";
+            }
+        });
+    });
 });
 
 //to top button
@@ -939,5 +934,220 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     toTopBtn.addEventListener('click', () => {
         window.scrollTo({top: 0, behavior: "smooth" });
+    });
+});
+
+//review
+document.addEventListener('DOMContentLoaded', () => {
+
+    const open_rev = document.getElementById('open-rev');
+    const rev_container = document.getElementById('rev-container');
+    const close_rev = document.getElementById('close-rev');
+
+    open_rev?.addEventListener('click', () => {
+        rev_container.classList.add('show');
+    });
+
+    close_rev?.addEventListener('click', () => {
+        rev_container.classList.remove('show');
+    });
+
+    rev_container?.addEventListener('click', (e) => {
+        if(e.target === rev_container) {
+            rev_container.classList.remove('show');
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if(e.key === "Escape") {
+            rev_container.classList.remove('show');
+        }
+    });
+
+
+    function escapeHTML(s) {
+        return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    };
+
+    function isoToday() {
+        return (new Date()).toISOString().slice(0,10);
+    };
+
+    function formatDate(iso) {
+        try { return new Date(iso).toLocaleDateString('uk-UA'); } catch(e) { return iso; }
+    };
+
+    const reviewsBlock = document.getElementById('reviewsBlock');
+    const productId = reviewsBlock.dataset.productId || 'product-unknown';
+    const LS_KEY = 'reviews_' + productId;
+
+    const reviewsList = document.getElementById('reviewsList');
+    const reviewsMeta = document.getElementById('reviewsMeta');
+    const productRatingSummary = document.getElementById('productRatingSummary');
+    const form = document.getElementById('reviewForm');
+    const inputName = document.getElementById('reviewName');
+    const inputText = document.getElementById('reviewText');
+    const starButtons = Array.from(document.querySelectorAll('.star-btn'));
+    const submitBtn = document.getElementById('submitBtn');
+
+    let reviews = [];
+    let currentRating = 0; 
+
+    function loadReviews() {
+        const raw = localStorage.getItem(LS_KEY);
+        if (!raw) {
+            const sample = [
+            { id: genId(), name: 'Ліля М.', rating: 4.5, text: 'Гарна сукня з дуже комфортним матеріалом', date: '2024-10-18' },
+            { id: genId(), name: 'Марічка А.', rating: 5, text: 'Сукня чудова, виглядає як на фото', date: '2024-10-18' },
+            { id: genId(), name: 'Ріма К.', rating: 5, text: 'Класний фасон, чудово сіла по фігурі', date: '2024-10-18' },
+            ];
+            reviews = sample;
+            saveReviews();
+            return;
+        }
+        try {
+            reviews = JSON.parse(raw);
+        } catch(e) {
+            reviews = [];
+        }
+    };
+
+    function saveReviews() {
+        localStorage.setItem(LS_KEY, JSON.stringify(reviews));
+    };
+
+    function genId() {
+      return 'r_' + Math.random().toString(36).slice(2,9);
+    };
+
+    function avgRating(arr) {
+        if (!arr.length) return 0;
+        return arr.reduce((s,x)=> s + Number(x.rating), 0) / arr.length;
+    };
+
+    function renderSummary() {
+        const avg = avgRating(reviews);
+        const roundedAvg = avg.toFixed(1);
+
+        reviewsMeta.textContent = `${reviews.length} відгуків · ${roundedAvg}`;
+        
+        if (productRatingSummary) {
+            productRatingSummary.innerHTML = `
+                <span class="stars">${renderStars(avg)}</span> 
+                <span class="rating-num">${roundedAvg}</span>
+            `;
+        }
+    }
+
+    function createReviewNode(r) {
+        const el = document.createElement('div');
+        el.className = 'review';
+        if (r.featured) el.classList.add('featured'); // optional
+        el.setAttribute('role','listitem');
+        el.dataset.id = r.id;
+
+        el.innerHTML = `
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="rev-top">
+                    <div><span class="name">${escapeHTML(r.name)}</span></div>
+                    <div class="date">${formatDate(r.date)}</div>
+                </div>
+                <div class="meta"><span class="stars" aria-hidden="true">${renderStars(r.rating)}</span><span class="rating-num">${Number(r.rating).toFixed(1)}</span></div>
+                <div class="text">${escapeHTML(r.text)}</div>
+        `;
+        return el;
+    };
+
+    function renderStars(v) {
+        const filled = Math.round(v);
+        return '★'.repeat(filled) + '☆'.repeat(5 - filled);
+    };
+
+    function renderStars(avg) {
+        const filled = Math.round(avg);
+        const empty = 5 - filled;
+        return '★'.repeat(filled) + '☆'.repeat(empty);
+    }
+
+    function renderAll() {
+        reviewsList.innerHTML = '';
+        if (!reviews.length) {
+            reviewsList.innerHTML = '<div class="empty">Поки що немає відгуків. Стань першим 😊</div>';
+            renderSummary();
+            return;
+        }
+        const sorted = reviews.slice().sort((a,b)=> new Date(b.date) - new Date(a.date));
+        sorted.forEach(r => reviewsList.appendChild(createReviewNode(r)));
+        renderSummary();
+    };
+
+    function setStarUI(value) {
+        currentRating = Number(value);
+        starButtons.forEach(btn => {
+            const v = Number(btn.dataset.value);
+            btn.classList.toggle('active', v <= currentRating);
+            btn.setAttribute('aria-checked', v === currentRating ? 'true' : 'false');
+        });
+    };
+
+    starButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const val = Number(btn.dataset.value);
+            setStarUI(val);
+        });
+        btn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+        });
+    });
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = inputName.value.trim();
+        const text = inputText.value.trim();
+        const rating = currentRating || 5;
+
+        if (!name) { inputName.focus(); return; }
+        if (!text) { inputText.focus(); return; }
+
+        submitBtn.disabled = true;
+
+        const item = {
+            id: genId(),
+            name,
+            text,
+            rating,
+            date: isoToday(),
+        };
+
+        reviews.unshift(item);
+        saveReviews();
+        renderAll();
+        form.reset();
+        setStarUI(5);
+        submitBtn.disabled = false;
+        inputName.focus();
+        rev_container.classList.remove('show');
+    });
+
+    (function init(){
+        loadReviews();
+        renderAll();
+        setStarUI(5);
+    })();
+
+    function setStarUI(value) {
+        currentRating = value;
+        starButtons.forEach(btn => {
+            const v = Number(btn.dataset.value);
+            btn.classList.toggle('active', v <= currentRating);
+            btn.textContent = v <= currentRating ? '★' : '☆';
+        });
+    }
+
+    starButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const val = Number(btn.dataset.value);
+            setStarUI(val);
+        });
     });
 });

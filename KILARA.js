@@ -1,3 +1,11 @@
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+Fancybox.bind("[data-fancybox='product']", {
+  Carousel: { infinite: false },
+  Toolbar: { display: ["close", "zoom"] }
+});
+
 
 //burger menu
 document.addEventListener('DOMContentLoaded', () => {
@@ -751,6 +759,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const active = thumbsWrap.querySelector('.pg-thumb.is-active');
         if (active) selectThumb(active);
     })();
+});
+
+// Gallery Fancybox
+document.addEventListener('DOMContentLoaded', () => {
+    const thumbs = Array.from(document.querySelectorAll('.pg-thumb'));
+    const mainImg = document.getElementById('mainImg');
+    if (mainImg) {
+        mainImg.addEventListener('click', () => {
+            const items = thumbs.map(a => ({
+            src: new URL(a.dataset.full, import.meta.url).href,
+            type: "image",
+            caption: a.dataset.caption || ""
+            }));
+            Fancybox.show(items, { Carousel: { infinite: false } });
+        });
+    }
 });
 
 //

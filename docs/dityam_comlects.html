@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
-    <title>KILARA Home Page</title>
+    <title>KILARA Комплекти</title>
 </head>
 <body>
     <header>
@@ -272,74 +272,149 @@
             </nav>  
     </header>
 
-    <section class="hero">
-        <div class="block info">
-            <div class="container-info">
-                <h4>Великий розпродаж до дня дітей</h4>
-                <br>
-                <h4>До 50% знижки на одяг для всієї родини</h4>
+    <section class="catalogue-complects">
+        <div class="container">   
+            <div class="catalogue-upper">
+                <div class="page-head">
+                    <nav class="breadcrumbs" aria-label="Хлібні крихти">
+                        <ul>
+                            <li><a href="/kids">Дітям/</a></li>
+                            <li><a href="/kids/clothes">Одяг/</a></li>
+                            <li aria-current="page">Комплекти</li>
+                        </ul>
+                    </nav>
+                    <h4 class="page-title" id="page-title"></h4>
+                </div>
+
+                <div class="view-sort">
+                    <div class="view">
+                        <ul>
+                            <li><label class="sortList"><input type="checkbox" class="cb-input"><span class="cb-label">В наявності</span></label></li>
+                            <li><label class="sortList"><input type="checkbox" class="cb-input"><span class="cb-label">В очікуванні</span></label></li>
+                            <li><div class="sortList" id="age-btn">Вік<img src="images/Arrow-small.png" alt="" class="arrow"></div>
+                                    <div class="age-submenu" id="age-submenu">
+                                        <div class="choose-age">3-4 років</div>
+                                        <div class="choose-age">4-5 років</div>
+                                        <div class="choose-age">5-6 років</div>
+                                        <div class="choose-age">6-7 років</div>
+                                        <div class="choose-age">7-8 років</div>
+                                        <div class="choose-age">8-9 років</div>
+                                        <div class="choose-age">9-10 років</div>
+                                        <div class="choose-age">10-11 років</div>
+                                        <div class="choose-age">11-12 років</div>
+                                    </div>
+                            </li>
+                            <li><div class="sortList" id="sex-btn">Стать <img src="images/Arrow-small.png" alt="" class="arrow"></div>
+                                    <div class="sex-submenu" id="sex-submenu">
+                                        <div class="choose-sex">Дівчинка</div>
+                                        <div class="choose-sex">Хлопчик</div>
+                                        <div class="choose-sex">Унісекс</div>
+                                    </div>
+                            </li>
+                            <li><div class="sortList" id="color-btn">Колір <img src="images/Arrow-small.png" alt="" class="arrow"></div>
+                                <div class="color-submenu" id="color-submenu">
+                                    <ul>
+                                        <li><input type="checkbox" class="color-box" style="background-color: white"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #EFDECE"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #FFD6D6"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #E5BDC5;"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #8CBBCA"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #E57DFF"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #76AC5C"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #989C71"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #76594B"></li>
+                                        <li><input type="checkbox" class="color-box" style="background-color: #474747"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><div class="sortList" id="price-btn">Ціна <img src="images/Arrow-small.png" alt="" class="arrow"></div>
+                                <div class="price-submenu" id="price-submenu">
+                                    <ul>
+                                        <li><input type="number" class="price-value" placeholder ="від"></li>
+                                        <li><input type="number" class="price-value" placeholder ="до"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sort">
+                        <a href="#" class="sortList" id="sort-btn">
+                        <span id="sort-label">Від дешевого</span>
+                        <img src="images/Arrow-small.png" alt="" class="arrow"></a>
+                        <div class="sort-submenu"id="sort-submenu">
+                            <ul>
+                                <li><div class="sort-option active" data-sort="price-asc">Від дешевого</div></li>
+                                <li><div class="sort-option" data-sort="price-desc">Від дорожчого</div></li>
+                                <li><div class="sort-option" data-sort="popular">За популярністю</div></li>
+                                <li><div class="sort-option" data-sort="new">Новинки</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-        </div>
-        <div class="block image"></div>
-    </section>
-
-    <section class="catalogue">
-        <div class="container">
-            <div class="nazva">
-                <a href="#"><h2>Дитячі костюми</h2></a>
-                <a href="#" class="btn more">Більше</a>
-            </div>     
-            <div class="catalogue_ct">
+            <div class="view-sort-sp">
+                <ul>
+                    <li><div class="open-filter" id="open-filter">Фільтри</div>
+                        <div class="filter-submenu" id="filter-submenu">
+                            <nav>
+                                <div class="filter-block-sp" id="age-sp-btn">Вік<div class="open-arrow" id="open-arrow-age"></div></div>
+                                        <div class="age-submenu-sp" id="age-submenu-sp">
+                                            <div class="choose-age-sp">3-4 років</div>
+                                            <div class="choose-age-sp">4-5 років</div>
+                                            <div class="choose-age-sp">5-6 років</div>
+                                            <div class="choose-age-sp">6-7 років</div>
+                                            <div class="choose-age-sp">7-8 років</div>
+                                            <div class="choose-age-sp">8-9 років</div>
+                                            <div class="choose-age-sp">9-10 років</div>
+                                            <div class="choose-age-sp">10-11 років</div>
+                                            <div class="choose-age-sp">11-12 років</div>
+                                        </div>
+                                <div class="filter-block-sp" id="sex-sp-btn">Стать<div class="open-arrow" id="open-arrow-sex"></div></div>
+                                        <div class="sex-submenu-sp" id="sex-submenu-sp">
+                                            <div class="choose-sex-sp">Дівчинка</div>
+                                            <div class="choose-sex-sp">Хлопчик</div>
+                                            <div class="choose-sex-sp">Унісекс</div>
+                                        </div>
+                                <div class="filter-block-sp" id="color-sp-btn">Колір<div class="open-arrow" id="open-arrow-color"></div></div>
+                                        <div class="color-submenu-sp" id="color-submenu-sp">
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: white"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #EFDECE"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #FFD6D6"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #E5BDC5"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #8CBBCA"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #E57DFF"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #76AC5C"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #989C71"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #76594B"></div>
+                                            <div class="color-check"><input type="checkbox" class="color-box" style="background-color: #474747"></div>
+                                        </div>
+                                <div class="filter-block-sp" id="price-sp-btn">Ціна<div class="open-arrow" id="open-arrow-price"></div></div>
+                                        <div class="price-submenu-sp" id="price-submenu-sp">
+                                            <input type="number" class="price-value" placeholder ="від">
+                                            <input type="number" class="price-value" placeholder ="до">
+                                        </div>
+                            </nav>
+                            <div class="checkbox">
+                                <label for="in-stock"><input type="checkbox" class="cb-input" id="in-stock"> В наявності</label>
+                                <label for="awaiting"><input type="checkbox" class="cb-input" id="awaiting"> В очікуванні</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class="sort-sp-btn" id="sort-sp-btn">Сортування</div>
+                        <div class="sort-submenu-sp" id="sort-submenu-sp">
+                            <div class="sort-option-sp">Від дешевого</div>
+                            <div class="sort-option-sp">Від дорожчого</div>
+                            <div class="sort-option-sp">За популярністю</div>
+                            <div class="sort-option-sp">Новинки</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalogue2_ct">
                 <div class="block">
-                    <div class="img"><a href="#"><img src="images/example.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px"  alt=""></div></button>
-                    <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
-                    <div class="color">
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76AC5C;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76594B;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #E5BDC5;">
-                            </div>
-                        </a>    
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #EFDECE;">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="price"><p>670 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
-                </div>
-                <div class="block"> 
-                    <div class="img"><a href="#"><img src="images/example3.png" alt=""></a></div>
+                    <div class="img"><a href="#"><img src="images/example--1.png" alt=""></a></div>
                     <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
-                    <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                    <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
                     <div class="color">
                         <a href="">
                             <div style="
@@ -378,58 +453,13 @@
                             </div>
                         </a>
                     </div>
-                    <div class="price"><p>670 грн</p></div>
-                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
-                </div>
-                <div class="block">
-                    <div class="img"><a href="#"><img src="images/example4.png" alt=""></a></div>
-                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
-                    <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
-                    <div class="color">
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76AC5C;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76594B;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #E5BDC5;">
-                            </div>
-                        </a>    
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #EFDECE;">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="price"><p>670 грн</p></div>
+                    <div class="price"><p>280 грн</p></div>
                     <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
                 <div class="block">
-                    <div class="img"><a href="#"><img src="images/example5.png" alt=""></a></div>
+                    <div class="img"><a href="#"><img src="images/example--2.png" alt=""></a></div>
                     <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
-                    <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                    <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
                     <div class="color">
                         <a href="">
                             <div style="
@@ -468,227 +498,646 @@
                             </div>
                         </a>
                     </div>
-                    <div class="price"><p>670 грн</p></div>
+                    <div class="price"><p>280 грн</p></div>
                     <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
                 </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--3.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--4.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--1.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--2.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--3.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--4.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--1.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--2.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--3.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--4.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--1.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--2.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--3.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+                <div class="block">
+                    <div class="img"><a href="#"><img src="images/example--4.png" alt=""></a></div>
+                    <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                    <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
+                    <div class="color">
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76AC5C;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #76594B;">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #E5BDC5;">
+                            </div>
+                        </a>    
+                        <a href="">
+                            <div style="
+                                width: 20px;
+                                height: 20px;
+                                border: 0.2px solid gray;
+                                border-radius: 100%;
+                                background: #EFDECE;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price"><p>280 грн</p></div>
+                    <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                </div>
+            </div>   
+            <div class="pagination">
+                <div class="prevPage"><img src="images/Arrow-back.png" alt=""></div>
+                <div class="pages"></div>
+                <div class="nextPage"><img src="images/Arrow-menu.png" alt=""></div>
             </div> 
         </div>
-    </section>
-
-    <section class="catalogue">
-        <div class="container">
-            <div class="nazva">
-                <a href="#"><h2>Топ продажів</h2></a>
-                <a href="#" class="btn more">Більше</a>
-            </div>     
-            <div class="catalogue_ct">
-                <div class="block">
-                    <div class="img"><a href="#"><img src="images/example.png" alt=""></a></div>
-                    <button class="like-this"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
-                    <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
-                    <div class="color">
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76AC5C;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76594B;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #E5BDC5;">
-                            </div>
-                        </a>    
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #EFDECE;">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="price"><p>670 грн</p></div>
-                    <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
-                </div>
-                <div class="block">
-                    <div class="img"><a href="#"><img src="images/example3.png" alt=""></a></div>
-                    <button class="like-this"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
-                    <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
-                    <div class="color">
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76AC5C;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76594B;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #E5BDC5;">
-                            </div>
-                        </a>    
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #EFDECE;">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="price"><p>670 грн</p></div>
-                    <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
-                </div>
-                <div class="block">
-                    <div class="img"><a href="#"><img src="images/example4.png" alt=""></a></div>
-                    <button class="like-this"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
-                    <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
-                    <div class="color">
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76AC5C;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76594B;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #E5BDC5;">
-                            </div>
-                        </a>    
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #EFDECE;">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="price"><p>670 грн</p></div>
-                    <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
-                </div>
-                <div class="block">
-                    <div class="img"><a href="#"><img src="images/example5.png" alt=""></a></div>
-                    <button class="like-this"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
-                    <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
-                    <div class="color">
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76AC5C;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #76594B;">
-                            </div>
-                        </a>
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #E5BDC5;">
-                            </div>
-                        </a>    
-                        <a href="">
-                            <div style="
-                                width: 20px;
-                                height: 20px;
-                                border: 0.2px solid gray;
-                                border-radius: 100%;
-                                background: #EFDECE;">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="price"><p>670 грн</p></div>
-                    <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
-                </div>
-            </div>    
-        </div>
-    </section>
-
-    <section class="sale">
-        <div class="info">
-            <div class="container-info">
-                <img class ="logo-sale" src="images/KILARA_sale.png" alt="">
-                <img class ="logo-sale-small" src="images/KILARA_sale.small.png" alt="">
-                <h4>Великий розпродаж до дня дітей</h4>
-                <h4>До 50% знижки на одяг для всієї родини</h4>
-                <h4>Великий розпродаж до дня дітей</h4>
-                <h4>До 50% знижки на одяг для всієї родини</h4>
-            </div>
-        </div>
-    </section>
-
-    <section class="summer">
-        <div class="container">
-            <div class="summer_ct">
-                <div class="info">
-                    <h4>Літні новинки зі знижкою до 20%</h4>
-                    <a class="btn" href="#">Дивитись</a>
-                </div>
-            </div>
-        </div>
-        
     </section>
 
     <footer>
@@ -754,7 +1203,7 @@
     </footer>
 
     <button id="toTopBtn"><div class="toTop"></div></button>
-    
+
     <script type="module" src="KILARA.js"></script>
 </body>
 </html>

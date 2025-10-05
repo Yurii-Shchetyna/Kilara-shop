@@ -1436,29 +1436,30 @@ img {
 .filter-submenu {
     position: absolute;
     left: 0;
+    top:100%;
     width: 100%;
     height: auto;
     background-color: white;
     border: 1px solid #d9d9d9;
-    z-index: 10;
+    z-index: 1000;
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    display: block;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
     transform: translateY(-10%);
     transition: 
         opacity 0.3s ease,
         transform 0.4s ease;
+        
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) translateY(-10%);
+    transform: translateZ(0) translateY(-10%);
 }
 
 .filter-submenu.show {
     pointer-events: auto;
     opacity:1;
-    visibility: visible;
-    transform: translateY(0%);
+    transform: translateY(0%) translateX(0%);
 }
 
 .filter-submenu label {

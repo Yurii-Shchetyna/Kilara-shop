@@ -468,8 +468,8 @@ img {
     align-content: space-between;
     text-align: center;
     
-    width: 540px;
-    height: 100vh;
+    width: 35%;
+    height: 100dvh;
 
     background-color: white;
     padding: 40px 20px;
@@ -634,11 +634,17 @@ img {
     font-size: 12px;
     color: #A1917E;
     }
+    .cart-content{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:768px) {
     .menu{
         display: none;
+    }
+    .cart-content {
+        width: 100%;
     }
 }
 
@@ -2863,7 +2869,7 @@ span-art {
 .chr {
     background-color: #ffffff;
     width: 35%;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -2918,7 +2924,7 @@ span-art {
 .size-content {
     background-color: #ffffff;
     width: 35%;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     gap: 50px;
     flex-direction: column;
@@ -2999,7 +3005,7 @@ span-art {
 .del-content {
     background-color: #ffffff;
     width: 35%;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     gap: 50px;
     flex-direction: column;
@@ -3074,7 +3080,7 @@ span-art {
 .pay-content {
     background-color: #ffffff;
     width: 35%;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     gap: 50px;
     flex-direction: column;
@@ -3655,7 +3661,7 @@ button.reviewBtn {
     align-items: center;
     top: 0;
     left:0;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     position: fixed;
     pointer-events: none;

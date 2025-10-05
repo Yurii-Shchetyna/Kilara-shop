@@ -1786,6 +1786,7 @@ img {
 }
 
 .color-box {
+    border-radius: 0;
     appearance: none; -webkit-appearance: none; -moz-appearance: none;
     inline-size: 40px;
     block-size: 28px;
@@ -2800,6 +2801,7 @@ span-art {
 }
 
 .color-box-2 {
+    border-radius: 0;
     appearance: none; -webkit-appearance: none; -moz-appearance: none;
     inline-size: 40px;
     block-size: 28px;

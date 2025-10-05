@@ -1409,7 +1409,6 @@ img {
 
 .view-sort-sp {
     display: none;
-    position: relative;
     background-color: #ffffff;
 }
 
@@ -1417,6 +1416,7 @@ img {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #d9d9d9;
+    position: relative;
 }
 
 .view-sort-sp ul li {
@@ -1437,7 +1437,6 @@ img {
     position: absolute;
     left: 0;
     width: 100%;
-    height: auto;
     background-color: #FFFFFF;
     border: 1px solid #d9d9d9;
     box-shadow: 0 6px 12px rgba(0,0,0,0.40);

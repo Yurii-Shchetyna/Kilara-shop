@@ -1314,7 +1314,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function totalItems(){ return track.children.length; }
         function calcPerView(){
-            if(window.innerWidth < 404) { return 1}
+            if(window.innerWidth < 375) { return 1}
             else if(window.innerWidth < 768) { return 2}
             else{return 4} 
         }

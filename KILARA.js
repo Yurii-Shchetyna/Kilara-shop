@@ -315,8 +315,8 @@ document.addEventListener('DOMContentLoaded', () => {
         buttons.forEach(b => b?.classList.remove('active'));
 
         if (!wasOpen) {
-        menu.classList.add('show'); 
-        btn.classList.add('active');
+            menu.classList.add('show'); 
+            btn.classList.add('active');
         }
     }
 

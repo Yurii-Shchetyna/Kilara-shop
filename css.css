@@ -1448,6 +1448,10 @@ img {
     transition: 
         opacity 0.3s ease,
         transform 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) translateY(-10%);
+    transform: translateZ(0) translateY(-10%);
 }   
 
 .filter-submenu.show {
@@ -1471,6 +1475,10 @@ img {
     transition: 
         opacity 0.3s ease,
         transform 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) translateY(-10%);
+    transform: translateZ(0) translateY(-10%);
 }
 
 .sort-submenu-sp.show {

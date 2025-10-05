@@ -448,7 +448,7 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left:0;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     position: fixed;
     opacity: 0;
@@ -502,91 +502,6 @@ img {
     color: white;
     padding: 15px 20px;
     align-self: center;
-}
-
-                                                                    /* user */
-
-.user-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left:0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 1;
-    transition:opacity 0.3s ease
-}
-
-.user-container.show{
-    pointer-events: auto;
-    opacity:1;
-}
-
-.user-content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    width: 540px;
-    gap: 15px;
-    position: relative;
-}
-
-.user-content form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 30px;
-    padding: 40px 50px;
-}
-
-.user-content label {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 16px;
-    align-self: start;
-}
-
-.user-content article {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-.user-content h3 {
-    text-align: center;
-}
-
-@media screen and (max-width:768px) {
-    .cart-content,
-    .user-content {
-        width: 100vw;
-        height: 100dvh;
-    }
-    .user-content form {
-        align-items: stretch;
-        padding: 40px 20px;
-    }
-    .user-content .go {
-        margin-top: 40px;
-        height: 60px;
-    }
-    .closebtn {
-        top: 30px;
-        left: 2px;
-    }
-    .order {
-        align-self: stretch;
-        width: 100%;
-    }
 }
 
                                                                     /* Menu categories*/
@@ -2931,7 +2846,7 @@ span-art {
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left:0;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     position: fixed;
     opacity: 0;
@@ -2986,7 +2901,7 @@ span-art {
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left:0;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     position: fixed;
     opacity: 0;
@@ -3067,7 +2982,7 @@ span-art {
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left:0;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     position: fixed;
     opacity: 0;
@@ -3142,7 +3057,7 @@ span-art {
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left:0;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     position: fixed;
     opacity: 0;
@@ -3233,7 +3148,7 @@ button.reviewBtn {
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left:0;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     position: fixed;
     opacity: 0;

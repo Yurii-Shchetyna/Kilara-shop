@@ -1450,6 +1450,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const forgot = document.querySelector('.forgetPass');
     const forgot_container = document.querySelector('.forgot-pass-overlay');
+    const close_forgot = document.getElementById('close-forgot');
 
     forgot?.addEventListener('click', () => {
         forgot_container.classList.add('show');
@@ -1459,6 +1460,9 @@ document.addEventListener('DOMContentLoaded', () => {
             forgot_container.classList.remove('show');
         }
     });
+    close_forgot?.addEventListener('click', () => {
+        forgot_container.classList.remove('show')
+    })
 });
 document.addEventListener('DOMContentLoaded', () => {
     const input = document.querySelector('.switch');
@@ -1479,6 +1483,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.oko-pass').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const label = btn.closest('label');
+            const input = label.querySelector('input');
+            const img = btn.querySelector('img');
+
+            if(!input || !img) return;
+
+            const isHidden = input.type === 'password';
+            input.type = isHidden ? 'text' : 'password';
+            img.src = isHidden ? 'images/password-open.png' : 'images/password-close.png';
+            img.alt = isHidden ? 'Сховати пароль' : 'Показати пароль';
+            btn.setAttribute('aria-pressed', isHidden ? 'true' : 'false');
+        });
+    });
+})
 
 //Order Quantity and color
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="css.css">
+    <title>KILARA Сонцезахисна панама з метеликами</title>
+</head>
+<body>
+
+    <header>
+            <div class="header_ct">
+                <div class="header-container">
+                    <div class="search-div">
+                        <input type="text" class="search">
+                    </div>
+                    <div class="burger"><button type="button" id="open-menu" class="burgerBtn"><img src="images/burger.png" width="30px" alt="burger"></button></div>
+                        <div id="menu-container" class="menu-container">
+                            <div class="menu-content">
+                                <div class="menu-top">
+                                    <div class="upper-menu">
+                                        <button type="button" id="close-menu" class="close-menu-btn"><img src="images/close-btn.png" alt="close"></button>
+                                    </div>
+
+                                    <div class="search-small-div"><input type="text" class="search-small"></div>
+                                    <ul>
+                                            <div class="ctg-content">
+                                                <ul>
+                                                    <li class="menu-block"><button type="button" id="open-wmn">Жінкам <img src="images/Arrow-menu.png" alt="arrow-menu"></button></li>
+                                                        <div class="wmn-container" id="wmn-container">
+                                                            <div class="wmn-content">
+                                                                <div class="menu-block-back"><button type="button" id="close-wmn"><img src="images/Arrow-back.png" alt="arrow-back"> Жінкам</button></div>
+                                                                <ul>
+                                                                    <li class="menu-block-main"><a href="./index_2.html">Одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Футболки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Топи</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Худі та світшоти</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Спідниці та шорти</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Сукні</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Джинси та брюки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Верхній одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Пляжний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Білизна та піжами</a></li>
+                                                                    <li class="menu-block-main"><a href="./index_2.html">Взуття</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Босоніжки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Черевики</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Кросівки та кеди</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Шлепанці</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Туфлі</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    <li class="menu-block"><button type="button" id="open-men">Чоловікам <img src="images/Arrow-menu.png" alt="arrow-menu"></button></li>
+                                                        <div class="men-container" id="men-container">
+                                                            <div class="men-content">
+                                                                <div class="menu-block-back"><button type="button" id="close-men"><img src="images/Arrow-back.png" alt="arrow-back"> Чоловікам</button></div>
+                                                                <ul>
+                                                                    <li class="menu-block-main"><a href="./index_2.html">Одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Футболки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Майки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Худі та світшоти</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Шорти</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Костюми</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Спортивний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Джинси та брюки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Верхній одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Пляжний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Білизна та піжами</a></li>
+                                                                    <li class="menu-block-main"><a href="./index_2.html">Взуття</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Черевики</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Кросівки та кеди</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Шлепанці</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Туфлі</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    <li class="menu-block"><button type="button" id="open-kid">Дітям <img src="images/Arrow-menu.png" alt="arrow-menu"></button></li>
+                                                        <div class="kid-container" id="kid-container">
+                                                            <div class="kid-content">
+                                                                <div class="menu-block-back"><button type="button" id="close-kid"><img src="images/Arrow-back.png" alt="arrow-back"> Дітям</button></div>
+                                                                <ul>
+                                                                    <li class="menu-block-main"><a href="./dityam_comlects.html">Одяг</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Футболки</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Топи</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Худі та світшоти</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Спідниці та шорти</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Комплекти</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Спортивний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Джинси та брюки</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Верхній одяг</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Пляжний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Білизна та піжами</a></li>
+                                                                    <li class="menu-block-main"><a href="./dityam_comlects.html">Взуття</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Босоніжки</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Черевики</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Кросівки та кеди</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Шлепанці</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    <li class="menu-block"><button type="button" id="open-acs">Аксесуари <img src="images/Arrow-menu.png" alt="arrow-menu"></button></li>
+                                                        <div class="acs-container" id="acs-container">
+                                                            <div class="acs-content">
+                                                                <div class="menu-block-back"><button type="button" id="close-acs"><img src="images/Arrow-back.png" alt="arrow-back"> Аксесуари</button></div>
+                                                                <ul>
+                                                                    <li class="menu-block-main"><a href="./panamki.html">Сумки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Шопери</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Клатчі</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Бананки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Сумки на плече</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Рюкзаки</a></li>
+                                                                    <li class="menu-block-main"><a href="./panamki.html">Головні убори</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Кепки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Панамки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Берети</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Капелюхи</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Шапки</a></li>
+                                                                    <li class="menu-block-main"><a href="./panamki.html">Шарфи та рукавички</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Шарфи</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Хустки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Бафи</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Рукавички</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    <li class="menu-block"><a href="./panamki.html">Акції</a></li>
+                                                    <li class="menu-block"><a href="./panamki.html">Новинки</a></li>
+                                                </ul>
+                                            </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>            
+                           
+                    <a href="./index.html" class="logo nav-link"><img src="images/KILARA.png" width="203px" alt="logo"></a>
+                    <div class="icons">
+                        <a href="tel:012 345 6789" class="phone"><img src="images/phone.png" width="25px" height="25px" alt="phone"></a>
+                        <a href="tel:012 345 6789" class="normal number">012 345 6789</a>
+                        <button type="button" id="open-cart" class="cart"><img src="images/cart.png" width="25px" height="25px" alt="cart"></button>
+                            <div id="cart-container" class="cart-container">
+                                <div class="cart-content" id="cart-content">
+                                    <button id="close-cart" class="closebtn"><img src="images/close-btn.png" alt="close"></button>
+                                    <h3>Мій кошик</h3>
+                                    <div class="export"></div>
+                                    <a href="./order.html" class="order nav-link">Оформити замовлення</a>
+                                </div>
+                            </div>
+                        <a href="./login.html" class="user"><img src="images/user.png" width="25px" height="25px" alt="user"></a>
+                        <a href="#" class="likes"><img src="images/likes.png" width="25px" height="25px" alt="likes"></a>
+                    </div>
+                </div>
+            </div>
+            <nav class="menu">
+                    <ul class="ul_menu">
+                        <li class="ct"><a href="#">Жінкам <img src="images/Arrow 1.png" alt="arrow" class="arrow"></a>
+                            <div class="submenu container">
+                                    <ul>
+                                        <li class="first"><a href="./index_2.html">Одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Футболки</a></li>
+                                        <li class="second"><a href="./index_2.html">Топи</a></li>
+                                        <li class="second"><a href="./index_2.html">Худі та світшоти</a></li>
+                                        <li class="second"><a href="./index_2.html">Спідниці та шорти</a></li>
+                                        <li class="second"><a href="./index_2.html">Комплекти</a></li>
+                                        <li class="second"><a href="./index_2.html" class="nav-link">Сукні</a></li>
+                                        <li class="second"><a href="./index_2.html">Джинси та брюки</a></li>
+                                        <li class="second"><a href="./index_2.html">Верхній одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Пляжний одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Білизна</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="first"><a href="./index_2.html">Взуття</a></li>
+                                        <li class="second"><a href="./index_2.html">Босоніжки</a></li>
+                                        <li class="second"><a href="./index_2.html">Черевики</a></li>
+                                        <li class="second"><a href="./index_2.html">Кросівки та кеди</a></li>
+                                        <li class="second"><a href="./index_2.html">Шлепанці</a></li>
+                                        <li class="second"><a href="./index_2.html">Туфлі</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="ct"><a href="#">Чоловікам <img src="images/Arrow 1.png" alt="arrow" class="arrow"></a>
+                            <div class="submenu container">
+                                    <ul>
+                                        <li class="first"><a href="./index_2.html">Одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Футболки</a></li>
+                                        <li class="second"><a href="./index_2.html">Майки</a></li>
+                                        <li class="second"><a href="./index_2.html">Худі та світшоти</a></li>
+                                        <li class="second"><a href="./index_2.html">Шорти</a></li>
+                                        <li class="second"><a href="./index_2.html">Костюми</a></li>
+                                        <li class="second"><a href="./index_2.html">Спортивний одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Джинси та брюки</a></li>
+                                        <li class="second"><a href="./index_2.html">Верхній одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Пляжний одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Білизна</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="first"><a href="./index_2.html">Взуття</a></li>
+                                        <li class="second"><a href="./index_2.html">Черевики</a></li>
+                                        <li class="second"><a href="./index_2.html">Кросівки та кеди</a></li>
+                                        <li class="second"><a href="./index_2.html">Шлепанці</a></li>
+                                        <li class="second"><a href="./index_2.html">Туфлі</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="ct"><a href="#">Дітям <img src="images/Arrow 1.png" alt="arrow" class="arrow"></a>
+                            <div class="submenu container">
+                                    <ul>
+                                        <li class="first"><a href="./dityam_comlects.html">Одяг</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Футболки</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Майки</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Худі та світшоти</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Шорти</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Комплекти</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Спортивний одяг</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Джинси та брюки</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Верхній одяг</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Пляжний одяг</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Білизна</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="first"><a href="./dityam_comlects.html">Взуття</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Черевики</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Кросівки та кеди</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Шлепанці</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="ct"><a href="#">Аксесуари <img src="images/Arrow 1.png" alt="arrow" class="arrow"></a>
+                            <div class="submenu container">
+                                    <ul>
+                                    <li class="first"><a href="./panamki.html">Сумки</a></li>
+                                    <li class="second"><a href="./panamki.html">Шопери</a></li>
+                                    <li class="second"><a href="./panamki.html">Клатчи</a></li>
+                                    <li class="second"><a href="./panamki.html">Бананки</a></li>
+                                    <li class="second"><a href="./panamki.html">Сумки на плече</a></li>
+                                    <li class="second"><a href="./panamki.html">Рюкзаки</a></li>
+                                    </ul>
+                                    <ul>
+                                    <li class="first"><a href="./panamki.html">Головні убори</a></li>
+                                    <li class="second"><a href="./panamki.html">Кепки</a></li>
+                                    <li class="second"><a href="./panamki.html">Панамки</a></li>
+                                    <li class="second"><a href="./panamki.html">Берети</a></li>
+                                    <li class="second"><a href="./panamki.html">Капелюхи</a></li>
+                                    <li class="second"><a href="./panamki.html">Шапки</a></li>
+                                    </ul>
+                                    <ul>
+                                    <li class="first"><a href="./panamki.html">Шарфи та рукавички</a></li>
+                                    <li class="second"><a href="./panamki.html">Шарфи</a></li>
+                                    <li class="second"><a href="./panamki.html">Хустки</a></li>
+                                    <li class="second"><a href="./panamki.html">Бафи</a></li>
+                                    <li class="second"><a href="./panamki.html">Рукавички</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="ct"><a href="./panamki.html">Акція</a></li>
+                        <li class="ct"><a href="./panamki.html">Новинки</a></li>
+                    </ul>
+            </nav>  
+    </header>
+
+    <section>
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="Хлібні крихти">
+                    <ul>
+                        <li><a href="#">Аксесуари/</a></li>
+                        <li><a href="#">Головні убори/</a></li>
+                        <li><a href="./panamki.html">Панамки/</a></li>
+                    </ul>
+            </nav>
+            <div class="tovar-flex">
+                    <div class="gallery">
+                        <div class="pg">
+                            <div class="pg-thumbs" id="thumbs" role="listbox" aria-label="Фотогалерея товару">
+                                <a href="#" class="pg-thumb is-active" aria-selected="true" data-full="images/example----1.png">
+                                    <img src="images/example----1-thumb.png" alt="">
+                                </a>
+                                <a href="#" class="pg-thumb" aria-selected="false" data-full="images/example----2.png">
+                                    <img src="images/example----2-thumb.png" alt="">
+                                </a>
+                                <a href="#" class="pg-thumb" aria-selected="false" data-full="images/example----3.png">
+                                    <img src="images/example----3-thumb.png" alt="">
+                                </a>
+                                <a href="#" class="pg-thumb" aria-selected="false" data-full="images/example----4.png">
+                                    <img src="images/example----4-thumb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="pg-main">
+                                <img id="mainImg" src="images/example----1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="sp-pg">
+                            <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" alt=""></div></button>
+                            <a href="images/example----1.png" data-fancybox="sp-gallery">
+                                <img src="images/example----1.png" alt="">
+                            </a>
+                            <a href="images/example----2.png" data-fancybox="sp-gallery">
+                                <img src="images/example----2.png" alt="">
+                            </a>
+                            <a href="images/example----3.png" data-fancybox="sp-gallery">
+                                <img src="images/example----3.png" alt="">
+                            </a>
+                            <a href="images/example----4.png" data-fancybox="sp-gallery">
+                                <img src="images/example----4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="allAbout">
+                        <div class="upperAbout">
+                            <div class="upper-top">
+                                <span-gr>Є в наявності</span-gr>
+                                <span-art>Артикул: 3978</span>
+                            </div>
+
+                            <h4>Сонцезахисна панама з метеликами</h4>
+                            <div class="upper-low">
+                                <div id="productRatingSummary"></div>
+                                <span>260 грн</span>
+                            </div>
+                        </div>
+                        <div class="sizes">
+                            <div class="sizes-top">
+                                <p>Розмір:</p>
+                            <ul>
+                                <li><div class="size-box-p">Один розмір</div></li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="colors">
+                            <p>Колір:</p>
+                            <div class="color-label">
+                                <ul>
+                                    <li><input type="radio" class="color-box-2" name="color" style="background-color: #EDDCCD"></li>
+                                    <li><input type="radio" class="color-box-2" name="color" style="background-color: #FFFFFF"></li>
+                                    <li><input type="radio" class="color-box-2" name="color" style="background-color: #505050"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <button class="add-to-cart">Додати в кошик</a>
+                            <button class="buy-now">Купити в 1 клік</a>
+                            <button class="like-this"><img src="images/likes.png" width="25px" height="25px" alt=""></button>
+                        </div>
+                        <div class="nav">
+                            <ul>
+                                <li><div class="item-block" id="open-chr">Характеристики<div class="item-arrow"></div></div></li>
+                                    <div class="chr-container" id="chr-container">
+                                        <div class="chr" id="chr">
+                                            <img src="images/close-btn.png" alt="" class="close-chr" id="close-chr">
+                                            <h5>Характеристики</h5>
+                                            <p>Стать: жінкам<br>Матеріал: бавовна<br>Сезон: весна-літо<br>Склад: 100% бавовна<br>Стиль: повсякденний<br>Обхват голови: 58 см</p>
+                                        </div>
+                                    </div>
+                                <li><div class="item-block" id="open-del">Доставка<div class="item-arrow"></div></div></li>
+                                    <div class="del-container" id="del-container">
+                                        <div class="del-content" id="del-content">
+                                            <img src="images/close-btn.png" class="close-del" id="close-del" alt="">
+                                            <div class="del-info">
+                                                <div class="del-info-upper">
+                                                    <img src="images/delivery-box.png" width="33px" alt="">
+                                                    <h5>Доставка</h5>
+                                                </div>
+                                                <p>Замовлення на суму 2000 грн і більше доставляються безкоштовно</p>
+                                                <span>Доставка Новою Поштою</span>
+                                                <ul>
+                                                    <li>Доставка здійснюється у відділення «Нова пошта» по всій Україні протягом 2-5 робочих днів.</li>
+                                                    <li>Після того, як менеджер відправить замовлення, ви отримаєте текстове повідомлення з номером експрес накладної. За цим номером зможете в будь-який момент відстежити замовлення й дізнатися, коли воно буде у відділенні на офіційному сайті компанії «Нова пошта».</li>
+                                                    <li>В обов'язковому порядку перевірте цілісність посилки та її відповідність замовленню у відділенні, перш ніж оплачувати.</li>
+                                                    <li>Адресна доставка кур`єром Нової Пошти.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <li><div class="item-block" id="open-pay">Оплата<div class="item-arrow"></div></div></li>
+                                    <div class="pay-container" id="pay-container">
+                                        <div class="pay-content" id="pay-content">
+                                            <img src="images/close-btn.png" id="close-pay" class="close-pay" alt="">
+                                            <div class="pay-info">
+                                                <div class="pay-info-upper">
+                                                    <img src="images/payment-card.png" width="33px" alt="">
+                                                    <h5>Способи оплати</h5>
+                                                </div>
+                                                <span>Готівка</span>
+                                                <ul>
+                                                    <li>Оплата готівкою при отриманні товару (адресна доставка кур'єром Нової пошти).</li>
+                                                </ul>
+                                                <span>Visa і MasterCard</span>
+                                                <ul>
+                                                    <li>Оплата замовлення онлайн банківською картою Visa і MasterCard через систему LiqPay.</li>
+                                                    <li>Зверніть увагу, що при цьому способі оплати доставка товару можлива тільки після підтвердження платежу.</li>
+                                                </ul>
+                                                <span>Накладений платіж ТК «Нова пошта»</span>
+                                                <ul>
+                                                    <li>Оплата замовлення післяплатою здійснюється після огляду посилки на відповідність замовленню в відділенні компанії «Нова пошта».</li>
+                                                    <li>Стягується комісія «Нової Пошти» 2% від суми замовлення, плюс 20 грн за переказ грошових коштів.</li>
+                                                    <li>Якщо ж з якихось причин замовлення не підійшло, ви просто відмовляєтеся від отримання посилки і не оплачуєте нічого.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="reviews" id="reviewsBlock" data-product-id="poduct-1679">
+                <div class="reviews-heading">
+                    <h4>Відгуки</h4>
+                    <div class="reviews-meta" id="reviewsMeta">0 відгуків . 0.0</div>
+                </div>
+
+                <div class="reviews-list" id="reviewsList" role="list" aria-lebel="polite"></div>
+                <button type="button" class="reviewBtn" id="open-rev">Написати відгук</button>
+                    <div class="revForm-container" id="rev-container">
+                        <form id="reviewForm" class="review-form" aria-label="Форма додавання відгуку">
+                            <img src="images/close-btn.png" class="close-rev" id="close-rev" alt="">
+                            <div class="col">
+                                <h5>Написати відгук</h5>
+                                <div class="stars-input" role="radiogroup" aria-label="Рейтинг">
+                                    <button type="button" class="star-btn" data-value="1" aria-label="1 зірка">☆</button>
+                                    <button type="button" class="star-btn" data-value="2" aria-label="2 зірки">☆</button>
+                                    <button type="button" class="star-btn" data-value="3" aria-label="3 зірки">☆</button>
+                                    <button type="button" class="star-btn" data-value="4" aria-label="4 зірки">☆</button>
+                                    <button type="button" class="star-btn" data-value="5" aria-label="5 зірок">☆</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                    <input type="text" id="reviewName" class="rev-name" placeholder="Ім'я" aria-lebel="Ім'я" required>
+                                    <input type="text" id="reviewEmal" class="rev-email" placeholder="E-mail" aria-label="E-mail" required>
+                                    <label><input type="checkbox" class="cb-input"> Повідомити про відповідь по електроній пошті</label>
+                            </div>
+                            <div class="row">
+                                <textarea id="reviewText" class="rev-text" placeholder="Ваш відгук" aria-lebel="текст відгуку" required></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" id="submitBtn" class="reviewBtn">Лишити відгук</button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="catalogue">
+        <div class="container">
+            <div class="go-check">
+                <div class="nazva">
+                    <a href="#"><h4>Також вам може сподобатись</h4></a>
+                </div>  
+                <div class="catalogue2_outer">
+                    <div class="block">
+                        <div class="img"><a href="#"><img src="images/example_d-1.jpg" alt=""></a></div>
+                        <button class="like-this"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                    </div>
+                                <div class="price"><p>280 грн</p></div>
+                            </div>
+                            <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png"  width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="#"><img src="images/example_d-2.jpg" alt=""></a></div>
+                        <button class="like-this"><div class="likeThis"><img src="images/likes.png"  width="25px"  alt=""></div></button>
+                        <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                    </div>
+                                <div class="price"><p>800 грн</p></div>
+                            </div>
+                            <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png"  width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="#"><img src="images/example_d-3.jpg" alt=""></a></div>
+                        <button class="like-this"><div class="likeThis"><img src="images/likes.png"  width="25px" alt=""></div></button>
+                        <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                    </div>
+                                <div class="price"><p>300 грн</p></div>
+                            </div>
+                            <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png"  width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="#"><img src="images/example_d-4.jpg" alt=""></a></div>
+                        <button class="like-this"><div class="likeThis"><img src="images/likes.png"  width="25px"  alt=""></div></button>
+                        <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>500 грн</p></div>
+                            </div>
+                            <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png"  width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="#"><img src="images/example_d-1.jpg" alt=""></a></div>
+                        <button class="like-this"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Коротка сукня з принтом троянд білого кольору</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                    </div>
+                                <div class="price"><p>280 грн</p></div>
+                            </div>
+                            <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png"  width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="#"><img src="images/example_d-2.jpg" alt=""></a></div>
+                        <button class="like-this"><div class="likeThis"><img src="images/likes.png"  width="25px"  alt=""></div></button>
+                        <div class="text"><p>Комплект светр та сукня молочного кольору</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                    </div>
+                                <div class="price"><p>800 грн</p></div>
+                            </div>
+                            <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png"  width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="#"><img src="images/example_d-3.jpg" alt=""></a></div>
+                        <button class="like-this"><div class="likeThis"><img src="images/likes.png"  width="25px" alt=""></div></button>
+                        <div class="text"><p>Коротка сукня бежевого кольру з зав’язками</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                    </div>
+                                <div class="price"><p>300 грн</p></div>
+                            </div>
+                            <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png"  width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="#"><img src="images/example_d-4.jpg" alt=""></a></div>
+                        <button class="like-this"><div class="likeThis"><img src="images/likes.png"  width="25px"  alt=""></div></button>
+                        <div class="text"><p>Довга сукня з чорним верхом та напівпрозорим низом</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>500 грн</p></div>
+                            </div>
+                            <button class="btn-buy"><div class="buyBtn"><img src="images/cart.png"  width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                </div> 
+                <nav class="go-check-pages">
+                    <button id="prevBtn" class="nav-btn" aria-label="попередні"><div class="arrow-back"></div></button>
+                    <button id="nextBtn" class="nav-btn" aria-label="наступні"><div class="arrow-next"></div></button>
+                </nav>
+            </div>   
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="contacts_ct">
+                <div class="block image">
+                    <a class="normal nav-link" href="./index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAAAwCAYAAABQbOXXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAksSURBVHgB7Z2Ncds2FMf/6XUAb1B0groTGJ0g7gSmJ7A7gdUJ4k4gZQLHE4iZwNnA7ARJJ0j1DsQRBh9EgHggKYW/O5xECiRBAO8DDwT1DitL48MhXbTfm0P6GyuxXB/Se2f7r0P6BgHeHZI+JIU06OKfIvJdtimW5pBqZ7tCOl/a5EIVeIE0Gq8sU6AO6dXZpnr+FUKNjXH14POtTV8gVy4p9jD92XJ/SP9AABKUbXvyBqahVCDvtzYPfVJl/45hHmAah465BN9I9rwEVf6t89tX55oaYZo20flJgH0tvG9/o/MoHL9HV8j+wLTcHdKjt4/KUEOGl/bzWH3u2utZgbBctMdcOsdapfQR0ysVH4W3SoaoUbANd4f03UuvSLc6Pgqm49tzUue9yjjepgekQQ3+Av4eL7x8U7NHv1wfIId7Twrmnv3r/RJxHtWWy6+/G8xHhf69UH8p1o6KueAd8lHoOnpq57b4jfMd4wT4mjnPe8yLQr9MtrFLcYdxgmJR6AvbHvlKdQxP4OtPQ4CfIvNJ+KJ2kLrB+AEqV44GMueZ29/W4MtgXZ4S/Ic8GhjXpnH2aRhhSRmbSqAD+0UUYKyg5LKB0eL0uUZxeKhBaXzFCcsVlksDIyxuuRWmtSwanRL2qSDAFIKygXG1dliF5BgaRlB2gd+WTIN+EII67hbTcANTd5+Z34pZZIW+nzd2kHaPzm+V4AH9so1BM+eZU2vbMZNtVM7XThk7xFIJX4cLtmiU5xVdH5UI+PQoaVE0zLiEwod/YuUY5HbVOD4/cY3l88jsy+6kA2gY5W6tyS6QJ4tSgqJgohANjJDMPVBeOhpdA4cmc09BUD4y+0LzZ1KQkiHl0rTbz0wejUyLXEJQFIyrRQ3uR0RW+mi81YgA72uX7nASNOgrRSqzQjk03k521ihgkaUFRaEbj6xCEoevEQku+nWB+ed6YqiZfb+hDApGgfgWWNwiSwsKuVvUoKuQxKPR71x2rMLlXTqhuaASaJh+5ltgcRdQUlB2MBK+Ckk8CrxGBE53nMJRSlAo0lUz+7mASJZFlhKUDUyh6YHGL1iJRcM0KDcm4bRiyVn6kjSQx9YFp1DELbKEoGxgQoD3iHv0fqXDTpRxUGPXzP6lj1M469FAHmtdPwd+/3jkmGRyBaVCFydfekRmaSjw4xOXU3S/lLfdINyZc3Dnnji4uhttkXMEhXzrrbO9wTxPjZ4quv18PpKH+02hzCy9BAr9hyFrlEHjuAcjapHHCoqCiXD5TPVszzkwpBGJBnxjL9Wq+MsxGpR5vk/DWIchSyVmkccIioKZK6nR9z01TjcyMzUacWO6mtm3xDpW6JeLnspoIM9Ne96hwBE3TlEYYZFTBYWk2M663+Ltsl2L+3KEFR6NOI1IPB85fkmQN6Ha79Q/NMpFQDXiXLqQ+5WsaFIFxZ11R1uI2sujILMi8pyJ1YhAf9bespToFwksueG63aby0vsUSgzgCRoDKfAPP3KIuF8pgvKIbtbd9atv0fezN1gH9sfQSBvkfgqcY24qmPcPUMejPnAPIyQNyvEe4bknjmIWWaH/PD9VxivCnZ9bJyK1BmXoOmPQmG89yuWI62mUWUtfIW09CnUuEooP6NZ9UDvfYTpXkPri04hjstZY/RyZb+j5LYpsUAW6oUHd7osZsP5I2AaqkLdM1c4J1CgDKSXVpgvn02UH0/YNpkGh62NbxMMJsQY/2GeJFRRyu5qBPPRWPt+KkOapsa5HcdHo3kOWQo2+u2VDzCWwYV3qZGT9SOlVXp6q3U9KtNTA3UW3n6nKl/Lfe/uo3LfIQGG8meJeJyT5XqpTd70URpj9Fg2w7yLLoUKa66XAvwuM3LBLlIcU8QvGwZVbxx4s/Zg9aSHfepAkT1GJp4BuP8dEhGr061Zh2rptYAbrvstiI18lxym5riZnhaIjh9KCQg3JzcRKWpVThixJKNwbQ1ZjC0FtXKHvaimUnRawId2xY97nI+ccpMRSYBrP1N4+jXlft7kEJAbf3OBTYx64dyGQ91DKqpBr3GD8/EyNDItcQlAIbpBk52F+VHI1IkFa3G9sjXnqtQH/Lq9SCpHqr0YeO2ZflEUuJSgN+m/to0p8wHlSYXiCNXWijCO0IGkua839pUIFeTS6fyrIITT5OAqFzMmZFroxLtKQM/hcYtRLIS76RJGh1Ikyjgpyk7sV0qJeHHtkRJMi2aJ7QWAOdDz3grzB85ayKIR9cNLn3Ab2pESGNJ2GjEZE4ByXmM+t5YI30p6Dhsx8HB3P1d+gISgpKESNfsE0zmtgrzE82WbvV+JBQe6JWBKSHEudQ42y4yb7EKSEkiG4NrgeOqi0oBDc/+id08CeGnJI02nkhYV9lhAmdtkx+6RCxdYllnoamerOb69BizyFoDTom+dzGdhfoPvLuxBWI9aQgwsTV5gPbpB8DxkqxC9JiIELiAxa5CkEheDmVs5hxl5F5LGaXsp1IELul8Y81ODfo6WRh4LpIzVkSbbIUwkKsfQZe4V0VEQe8n9zw8IcNbNvbOROgkdmX67XoNvPGrIkW+QpBaVGvzI15Ez0HAx1TIUyGpFY0iw9wc2paOSVSTII4pJskacUFIJbu0BaZwkD+zFuoI78XdLtsjTgX+4xV11ynY9IsSoKXfltx5UMgrhwbRJUfFMLClXmX96+pQzsK6ShMCxcpTSiZYfwNeeAc6814rwG6gd7dIJiQ7Y1ypA9S0+Z/ZlL6f86/86k64hjub9I1kinyigDofD2qYOrQJ7omd+RaOTN0m8h/zdu3JqkmPUqT961bf2WfCKZWyIcbCuN7s9sNMILc25gbpZSbIdCm18759+B76R0DRsJU+01bpztx8Bxr975uQa5dvJcg79H9z5DUCXeof8YxAP6y6Dda2yc3xTGh3Jt/bvb3H1cemW27XWNrj43gWMpbdHVl2qPU4hnB75uNZNXwQj31imv29Yv6K5t3bExbrI91nXtuH7gGwVtr79FuMJC6RXxVCPOn5MemDLsR9zfU1s3Nr0M5E8t5xgeEq756uSx7TWmnDZdIY2HwHmoXknZVHj7koqUdIN0FN7WzbHrfvXypN77ykoSpPm34Dsl7dvjRDrhO6ysTAO5Oqr9TkLyL06I/wGB74G1YkOuagAAAABJRU5ErkJggg==" alt="logo"></a>
+                    <a class="smartphone nav-link" href="./index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAAdCAYAAACOn8MFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU4SURBVHgB7VvNdds4EP68u3drKxC2A+9tb8ZWYB/3Zm0FtiuwUkHiCsxUYLkC0xXEHQipwM4tt4TzMHgYUgSJHzKyXvK9N48QOPghZgYzGFK/4+fDeUP/NPTKdEhYNPRfQycNmYa+xjQ6gn3oswGeh4Y2PfWrhk4DbeqGPjakG7pAGM8N3XJ5jLfmPkvxArtYVUP/J7S766kjJTENfeHfx/ACeIKd85QgWd1z+d+U/hdMJOhvgk65XgXaKb5/x/yP3GYp2ri+6cFfRN+XfH/ZM48Qr0I5tOj3BWlY8vzeiz5uevgUrAFsmdbcbgrcibHfIxNb7mAbyb9g3psI3kf4CU7JmwK5SEQa6dAYFrKDQns9FcqxRYaS/oYy0KJVDb3DYUChvcWdYT4Y2C31lcclxS2xaI323BeIVNISIX+AfYBDEbDzldKvn2NeGNh1Iih415MDUsgKbUGfxjTMFfIa1kelBC77Bi3IBu0gUsEKf05IpbpCPjRsMLfp1I0iR8g0UdKqQxIwgayWFol2n1rUz7llEwz8UY222CXSoWBPIgSpNBoRLiBVyLRQtOU4X3MoUHx1c062hkIY7M4lBaSINZe7Snox1jhFyAo2mjw0ARM0rD9zSLaGQpSul9uFHOrOvUHEClnBRofXaGvloYC0XS5SsjUUQirRZ6RB8dWIOqmkJxhR0hghK1gB0zXmPPzW4JIsplNfi/KcUbaCD+5qpBuJxm7G0cD3Q882GGWPCdlltOSAGocFjf70X5I1FGDFV9o9coJV8sdPPfWVKCcpaTfjdc8daPhMC93LWZB9ZbxISUOaLjNIGnHQiMt4SV4aJ/eo9gnj8xjMfg1Z8hrWAjZ8rbheoexQ/6NBi/sUuFeJ8pRHKTKCNayR0PVv+CNQCs4H2tVoH810gA9/BOoVrIbcirprHpQ6vILd7gzeNjRfV4H7f4oy8VwjHYrHOYb3v/S7augvlEXWZ9x+Fbj/DP+M8pjVQsiSDXbTlTKF2fXVbxX04LQTbQNElhZlDQMwsAJ1iRa3La9QluECfNAVmn8leKP9ctcn90H6S4147MMnx7z9GXt12IXG+KtG6etzI3cN/+54CPK17LKPISetKbc0sua5Ewm5cC8kzAjfgyhrlMOgHUXnvvd1u9AYKlHuVagcIZMf+MBlhbcRhPUp2iniFqmG37I1plHaGu1AVSMdGuGAUUIq6WRCJpBvNlwmv6OwP2j0R8bdVOAQKlG+wDSQ5/AYNyCh+GoieMnoBpU0V8jUqdu29x2EkYAfOnUK7Tc3Yxi1hgzU8NGuRpo1ByPlHpAsNp22LZR8NODOzwSN/WXCyPd2jykaaR/RSWuYMvtVi3LKOZwULcbVOMgdS48xx0TXEgo+uhvLhM0VXfdleygqTU1u3Isxh9pqxEfjC7SzUjHKo5D+keECXg47bUssmWCw3yBMYXfh6HeKP3aYY8uWb7toXjHro5H+KS+N8yzG0fJmqZAJ78QAcwRhOvEe1dVIzzTJ7XEqIRNkUonWJ2TNbszYo1MXg37ZoWvyKX7pEn5bCiXUZYJAYRiSNxTUKcEn8Yj8QDAm0bMSPDHJim6/fW3WsEJWGHcXIUjX0HK3R7BHBvemSQrWMJGG3CI8+ddA2xo+KFqg/RaG7rtgxyUOqI+bHl7AB3n0T4Vjvn8uxqy5TwUvnA38X2GGctLEf8nt3UK7OVb8m/q64vpuYGb4WRS37/sogPjv4edWY/efIxvxTIZ5qCx3yj5U8Ea56tTTs58c4Rd+JMhCNbzyG1hhG8yI788gkOhN3kKqAAAAAElFTkSuQmCC" alt="logo-small"></a>
+                </div>
+                <div class="block">
+                    <ul>
+                        <li class="first"><a href="#">Категорії</a></li>
+                        <li class="second"><a href="#">Жінкам</a></li>
+                        <li class="second"><a href="#">Чоловікам</a></li>
+                        <li class="second"><a href="#">Дітям</a></li>
+                        <li class="second"><a href="#">Аксесуари</a></li>
+                        <li class="second"><a href="#">Акції</a></li>
+                        <li class="second"><a href="#">Новинки</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <ul>
+                        <li class="first"><a href="#">Інфо</a></li>
+                        <li class="second"><a href="#">Про нас</a></li>
+                        <li class="second nav-link"><a href="./payment-delivery.html">Доставка</a></li>
+                        <li class="second nav-link"><a href="./payment-delivery.html">Оплата</a></li>
+                        <li class="second"><a href="#">Повернення</a></li>
+                        <li class="second"><a href="#">Питання та відповіді</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <ul>
+                        <li class="first nav-link"><a href="./index_contacts.html">Контакти</a></li>
+                        <li class="second"><a href="#">Наші магазини</a></li>
+                        <li class="second"><a href="tel:012 345 6789">012 345 6789</a></li>
+                        <li class="second"><a href="mailto:kilara@gmail.com">kilara@gmail.com</a></li>
+                        <li class="second"><a href="https://www.google.com/maps/place/%D0%91%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,+197,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4546871,30.3445488,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cca2232c9cb9:0xb19c092ce3a1de8c!8m2!3d50.4546871!4d30.3445488?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D">
+                                                    Проспект Перемоги 197</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="block">
+                    <span>Слідкуй за нами:</span>
+                    <div class="links">
+                        <a href="#"><img src="images/insta.png" width="35px" alt="instagram"></a>
+                        <a href="#"><img src="images/tele.png" width="35px" alt="telegram"></a>
+                        <a href="#"><img src="images/tik.png" width="35px" alt="tik-tok"></a>
+                    </div>
+                </div>
+                <div class="block">
+                    <span>Ми приймаємо:</span>
+                    <div class="pay">
+                        <a href="#"><img src="images/visa.png" width="54px" alt="VISA"></a>
+                        <a href="#"><img src="images/g-pay.png" width="54px" alt="Google-Pay"></a>
+                        <a href="#"><img src="images/a-pay.png" width="54px" alt="Apple-Pay"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="toTopBtn"><div class="toTop"></div></button>
+
+    <script type="module" src="KILARA.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+</html>

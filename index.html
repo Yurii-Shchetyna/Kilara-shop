@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="css.css">
+
+    <title>KILARA Home Page</title>
+</head>
+<body>
+    <header>
+            <div class="header_ct">
+                <div class="header-container">
+                    <div class="search-div">
+                        <input type="text" class="search">
+                    </div>
+                    <div class="burger"><button type="button" id="open-menu" class="burgerBtn"><img src="images/burger.png" width="30px" alt="burger"></button></div>
+                        <div id="menu-container" class="menu-container">
+                            <div class="menu-content">
+                                <div class="menu-top">
+                                    <div class="upper-menu">
+                                        <button type="button" id="close-menu" class="close-menu-btn"><img src="images/close-btn.png" alt="close"></button>
+                                    </div>
+
+                                    <div class="search-small-div"><input type="text" class="search-small"></div>
+                                    <ul>
+                                            <div class="ctg-content">
+                                                <ul>
+                                                    <li class="menu-block"><button type="button" id="open-wmn">Жінкам <img src="images/Arrow-menu.png" alt="arrow-menu"></button></li>
+                                                        <div class="wmn-container" id="wmn-container">
+                                                            <div class="wmn-content">
+                                                                <div class="menu-block-back"><button type="button" id="close-wmn"><img src="images/Arrow-back.png" alt="arrow-back"> Жінкам</button></div>
+                                                                <ul>
+                                                                    <li class="menu-block-main"><a href="./index_2.html">Одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Футболки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Топи</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Худі та світшоти</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Спідниці та шорти</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Сукні</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Джинси та брюки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Верхній одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Пляжний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Білизна та піжами</a></li>
+                                                                    <li class="menu-block-main"><a href="./index_2.html">Взуття</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Босоніжки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Черевики</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Кросівки та кеди</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Шлепанці</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Туфлі</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    <li class="menu-block"><button type="button" id="open-men">Чоловікам <img src="images/Arrow-menu.png" alt="arrow-menu"></button></li>
+                                                        <div class="men-container" id="men-container">
+                                                            <div class="men-content">
+                                                                <div class="menu-block-back"><button type="button" id="close-men"><img src="images/Arrow-back.png" alt="arrow-back"> Чоловікам</button></div>
+                                                                <ul>
+                                                                    <li class="menu-block-main"><a href="./index_2.html">Одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Футболки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Майки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Худі та світшоти</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Шорти</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Костюми</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Спортивний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Джинси та брюки</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Верхній одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Пляжний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Білизна та піжами</a></li>
+                                                                    <li class="menu-block-main"><a href="./index_2.html">Взуття</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Черевики</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Кросівки та кеди</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Шлепанці</a></li>
+                                                                    <li class="menu-block"><a href="./index_2.html">Туфлі</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    <li class="menu-block"><button type="button" id="open-kid">Дітям <img src="images/Arrow-menu.png" alt="arrow-menu"></button></li>
+                                                        <div class="kid-container" id="kid-container">
+                                                            <div class="kid-content">
+                                                                <div class="menu-block-back"><button type="button" id="close-kid"><img src="images/Arrow-back.png" alt="arrow-back"> Дітям</button></div>
+                                                                <ul>
+                                                                    <li class="menu-block-main"><a href="./dityam_comlects.html">Одяг</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Футболки</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Топи</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Худі та світшоти</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Спідниці та шорти</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Комплекти</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Спортивний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Джинси та брюки</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Верхній одяг</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Пляжний одяг</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Білизна та піжами</a></li>
+                                                                    <li class="menu-block-main"><a href="./dityam_comlects.html">Взуття</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Босоніжки</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Черевики</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Кросівки та кеди</a></li>
+                                                                    <li class="menu-block"><a href="./dityam_comlects.html">Шлепанці</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    <li class="menu-block"><button type="button" id="open-acs">Аксесуари <img src="images/Arrow-menu.png" alt="arrow-menu"></button></li>
+                                                        <div class="acs-container" id="acs-container">
+                                                            <div class="acs-content">
+                                                                <div class="menu-block-back"><button type="button" id="close-acs"><img src="images/Arrow-back.png" alt="arrow-back"> Аксесуари</button></div>
+                                                                <ul>
+                                                                    <li class="menu-block-main"><a href="./panamki.html">Сумки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Шопери</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Клатчі</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Бананки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Сумки на плече</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Рюкзаки</a></li>
+                                                                    <li class="menu-block-main"><a href="./panamki.html">Головні убори</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Кепки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Панамки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Берети</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Капелюхи</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Шапки</a></li>
+                                                                    <li class="menu-block-main"><a href="./panamki.html">Шарфи та рукавички</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Шарфи</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Хустки</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Бафи</a></li>
+                                                                    <li class="menu-block"><a href="./panamki.html">Рукавички</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    <li class="menu-block"><a href="./panamki.html">Акції</a></li>
+                                                    <li class="menu-block"><a href="./panamki.html">Новинки</a></li>
+                                                </ul>
+                                            </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>            
+                           
+                    <a href="./index.html" class="logo nav-link"><img src="images/KILARA.png" width="203px" alt="logo"></a>
+                    <div class="icons">
+                        <a href="tel:012 345 6789" class="phone"><img src="images/phone.png" width="25px" height="25px" alt="phone"></a>
+                        <a href="tel:012 345 6789" class="normal number">012 345 6789</a>
+                        <button type="button" id="open-cart" class="cart"><img src="images/cart.png" width="25px" height="25px" alt="cart"></button>
+                            <div id="cart-container" class="cart-container">
+                                <div class="cart-content" id="cart-content">
+                                    <button id="close-cart" class="closebtn"><img src="images/close-btn.png" alt="close"></button>
+                                    <h3>Мій кошик</h3>
+                                    <div class="export"></div>
+                                    <a href="./order.html" class="order nav-link">Оформити замовлення</a>
+                                </div>
+                            </div>
+                        <a href="./login.html" class="user"><img src="images/user.png" width="25px" height="25px" alt="user"></a>
+                        <a href="#" class="likes"><img src="images/likes.png" width="25px" height="25px" alt="likes"></a>
+                    </div>
+                </div>
+            </div>
+            <nav class="menu">
+                    <ul class="ul_menu">
+                        <li class="ct"><a href="#">Жінкам <img src="images/Arrow 1.png" alt="arrow" class="arrow"></a>
+                            <div class="submenu container">
+                                    <ul>
+                                        <li class="first"><a href="./index_2.html">Одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Футболки</a></li>
+                                        <li class="second"><a href="./index_2.html">Топи</a></li>
+                                        <li class="second"><a href="./index_2.html">Худі та світшоти</a></li>
+                                        <li class="second"><a href="./index_2.html">Спідниці та шорти</a></li>
+                                        <li class="second"><a href="./index_2.html">Комплекти</a></li>
+                                        <li class="second"><a href="./index_2.html" class="nav-link">Сукні</a></li>
+                                        <li class="second"><a href="./index_2.html">Джинси та брюки</a></li>
+                                        <li class="second"><a href="./index_2.html">Верхній одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Пляжний одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Білизна</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="first"><a href="./index_2.html">Взуття</a></li>
+                                        <li class="second"><a href="./index_2.html">Босоніжки</a></li>
+                                        <li class="second"><a href="./index_2.html">Черевики</a></li>
+                                        <li class="second"><a href="./index_2.html">Кросівки та кеди</a></li>
+                                        <li class="second"><a href="./index_2.html">Шлепанці</a></li>
+                                        <li class="second"><a href="./index_2.html">Туфлі</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="ct"><a href="#">Чоловікам <img src="images/Arrow 1.png" alt="arrow" class="arrow"></a>
+                            <div class="submenu container">
+                                    <ul>
+                                        <li class="first"><a href="./index_2.html">Одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Футболки</a></li>
+                                        <li class="second"><a href="./index_2.html">Майки</a></li>
+                                        <li class="second"><a href="./index_2.html">Худі та світшоти</a></li>
+                                        <li class="second"><a href="./index_2.html">Шорти</a></li>
+                                        <li class="second"><a href="./index_2.html">Костюми</a></li>
+                                        <li class="second"><a href="./index_2.html">Спортивний одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Джинси та брюки</a></li>
+                                        <li class="second"><a href="./index_2.html">Верхній одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Пляжний одяг</a></li>
+                                        <li class="second"><a href="./index_2.html">Білизна</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="first"><a href="./index_2.html">Взуття</a></li>
+                                        <li class="second"><a href="./index_2.html">Черевики</a></li>
+                                        <li class="second"><a href="./index_2.html">Кросівки та кеди</a></li>
+                                        <li class="second"><a href="./index_2.html">Шлепанці</a></li>
+                                        <li class="second"><a href="./index_2.html">Туфлі</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="ct"><a href="#">Дітям <img src="images/Arrow 1.png" alt="arrow" class="arrow"></a>
+                            <div class="submenu container">
+                                    <ul>
+                                        <li class="first"><a href="./dityam_comlects.html">Одяг</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Футболки</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Майки</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Худі та світшоти</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Шорти</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Комплекти</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Спортивний одяг</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Джинси та брюки</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Верхній одяг</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Пляжний одяг</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Білизна</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="first"><a href="./dityam_comlects.html">Взуття</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Черевики</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Кросівки та кеди</a></li>
+                                        <li class="second"><a href="./dityam_comlects.html">Шлепанці</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="ct"><a href="#">Аксесуари <img src="images/Arrow 1.png" alt="arrow" class="arrow"></a>
+                            <div class="submenu container">
+                                    <ul>
+                                    <li class="first"><a href="./panamki.html">Сумки</a></li>
+                                    <li class="second"><a href="./panamki.html">Шопери</a></li>
+                                    <li class="second"><a href="./panamki.html">Клатчи</a></li>
+                                    <li class="second"><a href="./panamki.html">Бананки</a></li>
+                                    <li class="second"><a href="./panamki.html">Сумки на плече</a></li>
+                                    <li class="second"><a href="./panamki.html">Рюкзаки</a></li>
+                                    </ul>
+                                    <ul>
+                                    <li class="first"><a href="./panamki.html">Головні убори</a></li>
+                                    <li class="second"><a href="./panamki.html">Кепки</a></li>
+                                    <li class="second"><a href="./panamki.html">Панамки</a></li>
+                                    <li class="second"><a href="./panamki.html">Берети</a></li>
+                                    <li class="second"><a href="./panamki.html">Капелюхи</a></li>
+                                    <li class="second"><a href="./panamki.html">Шапки</a></li>
+                                    </ul>
+                                    <ul>
+                                    <li class="first"><a href="./panamki.html">Шарфи та рукавички</a></li>
+                                    <li class="second"><a href="./panamki.html">Шарфи</a></li>
+                                    <li class="second"><a href="./panamki.html">Хустки</a></li>
+                                    <li class="second"><a href="./panamki.html">Бафи</a></li>
+                                    <li class="second"><a href="./panamki.html">Рукавички</a></li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="ct"><a href="./panamki.html">Акція</a></li>
+                        <li class="ct"><a href="./panamki.html">Новинки</a></li>
+                    </ul>
+            </nav>  
+    </header>
+
+    <section class="hero">
+        <div class="block info">
+            <div class="container-info">
+                <h4>Великий розпродаж до дня дітей</h4>
+                <br>
+                <h4>До 50% знижки на одяг для всієї родини</h4>
+            </div>
+
+        </div>
+        <div class="block image"></div>
+    </section>
+
+    <section class="catalogue">
+        <div class="container">
+            <div class="go-check">
+                <div class="nazva">
+                    <a href="./dityam_comlects.html"><h2>Дитячі комплекти</h2></a>
+                    <a href="./dityam_comlects.html" class="btn more">Більше</a>
+                </div>     
+                <div class="catalogue2_outer">
+                    <div class="block">
+                        <div class="img"><a href="./item_2.html"><img src="images/example--3.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px"  alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>    
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block"> 
+                        <div class="img"><a href="./item_2.html"><img src="images/example--4.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="item_2.html"><img src="images/example5.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="item_2.html"><img src="images/example4.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="item_2.html"><img src="images/example--3.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px"  alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block"> 
+                        <div class="img"><a href="item_2.html"><img src="images/example--4.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="item_2.html"><img src="images/example5.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="item_2.html"><img src="images/example4.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="go-check-pages">
+                    <button id="prevBtn" class="nav-btn" aria-label="попередні"><div class="arrow-back"></div></button>
+                    <button id="nextBtn" class="nav-btn" aria-label="наступні"><div class="arrow-next"></div></button>
+                </nav>
+ 
+                <div class="nazva">
+                    <a href="#"><h2>Топ продажів</h2></a>
+                    <a href="#" class="btn more">Більше</a>
+                </div>     
+                <div class="catalogue2_outer second_outer">
+                    <div class="block">
+                        <div class="img"><a href="./item_3.html"><img src="images/example---2.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px"  alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block"> 
+                        <div class="img"><a href="./item_2.html"><img src="images/example--1.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="./item_page.html"><img src="images/example-3.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                                <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="./item_page.html"><img src="images/example-4.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="./item_3.html"><img src="images/example---2.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px"  alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block"> 
+                        <div class="img"><a href="./item_2.html"><img src="images/example--1.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="./item_page.html"><img src="images/example-3.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img"><a href="./item_page.html"><img src="images/example-4.png" alt=""></a></div>
+                        <button class="like-this" type="button"><div class="likeThis"><img src="images/likes.png" width="25px" alt=""></div></button>
+                        <div class="text"><p>Костюм спортивний дитячий кольору хакі</p></div>
+                        <div class="lowBl">
+                            <div class="col">
+                                <div class="color">
+                                    <a href="#"><div style="background: #76AC5C" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #76594B" class="color-dot"></div></a>
+                                    <a href="#"><div style="background: #E5BDC5" class="color-dot"></div></a>    
+                                    <a href="#"><div style="background: #EFDECE" class="color-dot"></div></a>
+                                </div>
+                                <div class="price"><p>670 грн</p></div>
+                            </div>
+                            <button class="btn-buy" type="button"><div class="buyBtn"><img src="images/cart.png" width="25px" alt=""></div></button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="go-check-pages">
+                    <button id="second_prev" class="nav-btn" aria-label="попередні"><div class="arrow-back"></div></button>
+                    <button id="second_next" class="nav-btn" aria-label="наступні"><div class="arrow-next"></div></button>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="sale">
+        <div class="info">
+            <div class="container-info">
+                <a href="./index.html" class ="logo"><img src="images/KILARA.png" width="203px" alt=""></a>
+                <h4>Великий розпродаж до дня дітей</h4>
+                <h4>До 50% знижки на одяг для всієї родини</h4>
+                <h4>Великий розпродаж до дня дітей</h4>
+                <h4>До 50% знижки на одяг для всієї родини</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="summer">
+        <div class="container">
+            <div class="summer_ct">
+                <div class="info">
+                    <h4>Літні новинки зі знижкою до 20%</h4>
+                    <a class="btn" href="./index_2.html">Дивитись</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="contacts_ct">
+                <div class="block image">
+                    <a class="logo nav-link" href="./index.html"><img src="images/KILARA.png" width="203px" alt="logo"></a>
+                </div>
+                <div class="block">
+                    <ul>
+                        <li class="first"><a href="#">Категорії</a></li>
+                        <li class="second"><a href="#">Жінкам</a></li>
+                        <li class="second"><a href="#">Чоловікам</a></li>
+                        <li class="second"><a href="#">Дітям</a></li>
+                        <li class="second"><a href="#">Аксесуари</a></li>
+                        <li class="second"><a href="#">Акції</a></li>
+                        <li class="second"><a href="#">Новинки</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <ul>
+                        <li class="first"><a href="#">Інфо</a></li>
+                        <li class="second"><a href="#">Про нас</a></li>
+                        <li class="second nav-link"><a href="./payment-delivery.html">Доставка</a></li>
+                        <li class="second nav-link"><a href="./payment-delivery.html">Оплата</a></li>
+                        <li class="second"><a href="#">Повернення</a></li>
+                        <li class="second"><a href="#">Питання та відповіді</a></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <ul>
+                        <li class="first nav-link"><a href="./index_contacts.html">Контакти</a></li>
+                        <li class="second"><a href="#">Наші магазини</a></li>
+                        <li class="second"><a href="tel:012 345 6789">012 345 6789</a></li>
+                        <li class="second"><a href="mailto:kilara@gmail.com">kilara@gmail.com</a></li>
+                        <li class="second"><a href="https://www.google.com/maps/place/%D0%91%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,+197,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4546871,30.3445488,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cca2232c9cb9:0xb19c092ce3a1de8c!8m2!3d50.4546871!4d30.3445488?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D">
+                                                    Проспект Перемоги 197</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="block">
+                    <span>Слідкуй за нами:</span>
+                    <div class="links">
+                        <a href="#"><img src="images/insta.png" width="35px" alt="instagram"></a>
+                        <a href="#"><img src="images/tele.png" width="35px" alt="telegram"></a>
+                        <a href="#"><img src="images/tik.png" width="35px" alt="tik-tok"></a>
+                    </div>
+                </div>
+                <div class="block">
+                    <span>Ми приймаємо:</span>
+                    <div class="pay">
+                        <a href="#"><img src="images/visa.png" width="54px" alt="VISA"></a>
+                        <a href="#"><img src="images/g-pay.png" width="54px" alt="Google-Pay"></a>
+                        <a href="#"><img src="images/a-pay.png" width="54px" alt="Apple-Pay"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="toTopBtn"><div class="toTop"></div></button>
+    
+    <script src="KILARA.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+</html>

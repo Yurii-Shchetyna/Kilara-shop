@@ -647,6 +647,10 @@ img {
     .cart-content {
         width: 100%;
     }
+    .closebtn {
+        left: auto;
+        right: 0;
+    }
 }
 
                                                                     /*Hero Section*/

@@ -699,7 +699,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ccCVV = document.getElementById('cc-cvv');
     const ccName = document.getElementById('cc-name');
     function clearActivePay() {
-        payButtons.forEach(b => {b.classList.remove('active'); b.setAttribute('area-pressed','false'); });
+        payButtons.forEach(b => {b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
     }
     function pickPayment(mode, btn) {
         clearActivePay();
@@ -730,7 +730,26 @@ document.addEventListener('DOMContentLoaded', () => {
     ccCVV && ccCVV.addEventListener('input', () => {
         ccCVV.value = ccCVV.value.replace(/\D/g,'').slice(0,3);
     });
-});
+
+    const formData = new FormData(form); 
+    fetch('/submit-order', { 
+        method: 'POST', 
+        body: formData 
+    })
+    .then(resp => {
+        if (!resp.ok) throw new Error('Network response was not ok');
+        return resp.json(); 
+    })
+    .then(data => {
+        alert('Замовлення успішно відправлено');
+        form.reset();
+        initState(); 
+    })
+    .catch(err => {
+        console.error(err); 
+        alert('Сталася помилка при відправці. Спробуйте пізніше.'); 
+    }); 
+}); 
 
 //
 document.addEventListener('DOMContentLoaded', () => {
